@@ -12,6 +12,7 @@ void main() {
   for (var nome in clientes) {
     var listaNomes = nome.split('|');
     var primeiroNome = listaNomes.first;
+
     print(primeiroNome);
   }
 }
