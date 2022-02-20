@@ -24,29 +24,29 @@ void main() {
   int qtdeJorn = 0;
   for (var paciente in pacientes) {
     var listaPacientes = paciente.split('|');
-    var novaListaPacientes = listaPacientes;
 
-    var idade = novaListaPacientes[1];
+    var idade = listaPacientes[1];
     int novaIdade = int.parse(idade);
 
-    if (novaIdade >= 20) {
-      listPacientes20.add(novaListaPacientes[0]);
+    if (novaIdade > 20) {
+      listPacientes20.add(listaPacientes[0]);
     }
 
-    if (novaListaPacientes[2].toLowerCase().contains('desenvolvedor')) {
+    if (listaPacientes[2].toLowerCase().contains('desenvolvedor')) {
       qtdeDev++;
-    } else if (novaListaPacientes[2].toLowerCase().contains('estudante')) {
+    } else if (listaPacientes[2].toLowerCase().contains('estudante')) {
       qtdeEst++;
-    } else if (novaListaPacientes[2].toLowerCase().contains('dentista')) {
+    } else if (listaPacientes[2].toLowerCase().contains('dentista')) {
       qtdeDent++;
-    } else if (novaListaPacientes[2].toLowerCase().contains('jornalista')) {
+    } else if (listaPacientes[2].toLowerCase().contains('jornalista')) {
       qtdeJorn++;
     }
 
-    if (novaListaPacientes[3].contains('SP')) {
+    if (listaPacientes[3].contains('SP')) {
       qtdeSP++;
     }
   }
+
   print('PACIENTE COM IDADE MAIOR DO QUE 20: $listPacientes20');
   print(
       'Qtde Dev: $qtdeDev | Qtde Estudante: $qtdeEst | Qtde Dentista: $qtdeDent | Qtde $qtdeJorn');
