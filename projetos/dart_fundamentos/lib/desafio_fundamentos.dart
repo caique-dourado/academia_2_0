@@ -31,13 +31,14 @@ void main() {
       listPacientes20.add(listaPacientes[0]);
     }
 
-    if (listaPacientes[2].toLowerCase().contains('desenvolvedor')) {
+    var profissao = listaPacientes[2].toLowerCase();
+    if (profissao.contains('desenvolvedor')) {
       qtdeDev++;
-    } else if (listaPacientes[2].toLowerCase().contains('estudante')) {
+    } else if (profissao.contains('estudante')) {
       qtdeEst++;
-    } else if (listaPacientes[2].toLowerCase().contains('dentista')) {
+    } else if (profissao.contains('dentista')) {
       qtdeDent++;
-    } else if (listaPacientes[2].toLowerCase().contains('jornalista')) {
+    } else if (profissao.contains('jornalista')) {
       qtdeJorn++;
     }
 
