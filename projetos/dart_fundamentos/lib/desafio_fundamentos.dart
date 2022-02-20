@@ -25,10 +25,9 @@ void main() {
   for (var paciente in pacientes) {
     var listaPacientes = paciente.split('|');
 
-    var idade = listaPacientes[1];
-    int novaIdade = int.parse(idade);
+    final idade = int.tryParse(listaPacientes[1]) ?? 0;
 
-    if (novaIdade > 20) {
+    if (idade > 20) {
       listPacientes20.add(listaPacientes[0]);
     }
 
