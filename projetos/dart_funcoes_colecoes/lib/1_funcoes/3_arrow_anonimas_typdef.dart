@@ -2,7 +2,7 @@ void main() {
   somarArrow(40, 65);
 
 //! FUNCOES ANONIMAS ()
-//São funcões armazendas em variáveis (estas funcões não tem nomes)
+//São funcões armazendas em variáveis (estas funcões não tem nomes) - Closure
   () {
     print('Ola mundo');
   }();
