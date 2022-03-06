@@ -39,7 +39,9 @@ void main() {
     'Luiz|60',
   ];
 
-  listaPacientes.sort((paciente1, paciente2) {
+  var novaListaPacientes = [...listaPacientes];
+
+  novaListaPacientes.sort((String paciente1, String paciente2) {
     final pacientesDados1 = paciente1.split('|');
     final pacientesDados2 = paciente2.split('|');
     final idadePac1 = int.parse(pacientesDados1[1]);
@@ -53,7 +55,7 @@ void main() {
     }
   });
 
-  print(listaPacientes);
+  print(novaListaPacientes);
 
   //CompareTo()
   var listaPacientes2 = [
