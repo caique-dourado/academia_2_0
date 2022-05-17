@@ -1,0 +1,28 @@
+{
+    "nome": "Caique Dourado",
+    "idade": 25,
+    "nomeCursos": ["Academia do Flutter", "Imersão GetX"],
+    "cursos":[{
+        "id":1,
+        "nome": "Academia do Flutter",
+        "isAluno": true
+    }, {
+        "id":2,
+        "nome": "Imersão GetX",
+        "isAluno":false
+    }],
+    "endereco": {
+        "rua": "Rua X",
+        "numero": 200,
+        "CEP": 213254644,
+        "cidade": {
+            "id": 1,
+            "nome": "São Luis"
+        },
+        "telefone":{
+            "ddd": 98,
+            "telefone": 991119999
+        }
+    }
+
+}

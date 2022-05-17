@@ -1,0 +1,16 @@
+[{
+    "nome":"Caique Dourado",
+    "idade": 25,
+    "nomeCursos": ["Academia do Flutter", "Imersão GetX"]
+},
+{
+    "nome": "Antony Stark",
+    "idade": 40,
+    "nomeCursos": ["Academia do Flutter", "Imersão GetX"]
+},
+{
+    "nome": "Pepper Ports",
+    "idade": 38,
+    "nomeCursos": ["Academia do Flutter","Imersão GetX"]
+}
+]
